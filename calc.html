@@ -1,0 +1,151 @@
+
+
+<html>
+<head>  
+        
+        <script>
+		
+		  
+		       function press(val)
+		       { 
+			     
+				document.getElementById('result').value += val;
+				return val;
+				
+				
+		       }
+		   
+		       function simplify(no)
+			   {
+			     if(no=='C')
+				 {
+				  document.getElementById('result').value = "";
+		         
+				 }
+				 
+				 else 
+				 {
+				 let x = document.getElementById('result').value;
+				 let ans = eval(x);
+				 
+				 
+				 document.getElementById('result').value=ans;
+				 
+				 return ans;
+				 }
+				 
+				
+				
+				 
+			  }
+			  
+			
+               
+		   
+
+
+
+
+        
+         </script>		
+        <style>
+		      
+			  .border{
+			     background-color:plum;
+				 border-radius:40%;
+				 
+		       }
+				
+		     .btn{
+			    border-radius:30%;
+                background-color:plum;
+				border-width:0px ;
+				border-style :solid ;
+				
+				align:middle;
+				
+				
+				height:30px;
+				width:40px;
+			
+				
+				
+				}
+				
+				
+				.btn:hover{
+				background-color:red;
+				border-color:plum;
+				color:plum;
+				}
+				
+				
+				
+        </style>
+   
+</head>
+
+<body>
+
+
+   <table align="center" id='table' width=100  height=200 border=0px bgcolor="black" >
+   
+     <tr>
+         <th colspan=4   class="border" > CALCULATOR </th>    
+     </tr>
+	 <tr>
+	     <td colspan=4> <input id='result' type="text" width=400 id='data' autofocus>  </td> 
+     </tr>
+	 
+	 <tr>
+	    <th> <input type="button" id='buttons' value='1' class="btn" onclick='press(this.value)'> </th>
+		<th> <input type="button" id='buttons' value='2' class="btn" onclick='press(this.value)'> </th>
+        <th> <input type="button" id='buttons' value='3' class="btn" onclick='press(this.value)'> </th>
+        <th> <input type="button" id='buttons' value='4' class="btn" onclick='press(this.value)'> </th>
+	 </tr>
+	 
+	 <tr>
+	    <th> <input type="button" id='buttons' value='5' class="btn" onclick='press(this.value)'> </th>
+		<th> <input type="button" id='buttons' value='6' class="btn" onclick='press(this.value)'> </th>
+        <th> <input type="button" id='buttons' value='7' class="btn" onclick='press(this.value)'> </th>
+        <th> <input type="button" id='buttons' value='8' class="btn" onclick='press(this.value)'> </th>
+	  </tr> 
+	  
+	 <tr>
+	    <th> <input type="button" id='buttons' value='9' class="btn" onclick='press(this.value)'> </th>
+		<th> <input type="button" id='buttons' value='0' class="btn" onclick='press(this.value)'> </th>
+		
+        <th> <input type="button" id='buttons' value='%' class="btn" onclick='press(this.value)'> </th>
+		
+		<th> <input type="button" id='buttons' value='=' class="btn" onclick='simplify(this.value)'> </th>
+	  </tr> 
+	  
+	  <tr>
+	    <th> <input type="button" id='buttons' value='+' class="btn" onclick='press(this.value)'> </th>
+		<th> <input type="button" id='buttons' value='-' class="btn" onclick='press(this.value)'> </th>
+        <th> <input type="button" id='buttons' value='*' class="btn" onclick='press(this.value)'> </th>
+        <th> <input type="button" id='buttons' value='/' class="btn" onclick='press(this.value)'> </th>
+	  </tr>
+	   <tr>
+		<th> <input type="button" id='buttons' value='.' class="btn" onclick='press(this.value)'> </th>
+	    <th> <input type="button" id='buttons' value='C' class="btn" onclick='simplify(this.value)'> </th>
+		<th class="click"> <input type="button" id='buttons'  value='D' class="btn" onclick='simplify(this.value)'> </th>
+		<th> <input type="button" id='buttons' bgcolor="plum" value='L' class="btn" onclick='simplify(this.value)'> </th>
+	  </tr>
+	  
+   </table>
+      
+				   
+   
+   
+   </body>
+ </html>
+		 
+
+
+
+
+
+            		 
+  
+
